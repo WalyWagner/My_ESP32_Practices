@@ -1,5 +1,5 @@
 /*
-  POWERED BY -WSW- . 
+  POWERED BY -WSW- 
   El propósito de este programa es controlar una alarma activada por un sensor de movimiento PIR. 
   Cuando se detecta movimiento, se enciende un LED y se inicia un temporizador. 
   Al pasar un tiempo predefinido (5 segundos), el LED se apaga automáticamente.
@@ -16,6 +16,10 @@
   **Importante:** Este código no es bloqueante, lo que significa que el microcontrolador puede seguir 
   ejecutando otras tareas mientras se maneja la detección de movimiento y el temporizador sin detener 
   el flujo principal del programa.
+
+  **Aclaración:** Este código está desarrollado para el paquete de esp32 by Espressif Systems desde V
+  la versión 3.0.0 en adelante. Esto se debe a que las funciones de temporizado cambiaron respecto a 
+  la versión 2.x.x
 
   Licencia Dual:
 Este código está disponible bajo la Licencia MIT para fines no comerciales. 
