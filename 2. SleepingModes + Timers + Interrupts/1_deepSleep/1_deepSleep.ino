@@ -88,7 +88,7 @@ void setup() {
   if (bootCount == 0) { // primer setup
     // Inicializar el puerto serie para depuración
     Serial.begin(115200);
-    // delay(1000);  // Tomarse un tiempo para abrir el Monitor Serie
+     delay(1000);  // Tomarse un tiempo para abrir el Monitor Serie
 
     // Incrementar el contador de inicio y mostrarlo en cada reinicio
     ++bootCount;
@@ -110,7 +110,7 @@ void setup() {
   } else { // cada vez que despierte de un deepsleep
     // Inicializar el puerto serie para depuración
     Serial.begin(115200);
-    // delay(1000);  // Tomarse un tiempo para abrir el Monitor Serie
+     delay(1000);  // Tomarse un tiempo para abrir el Monitor Serie
 
     // Incrementar el contador de inicio y mostrarlo en cada reinicio
     ++bootCount;
@@ -134,6 +134,7 @@ void setup() {
 
     // Configurar el temporizador para que se ejecute cada 'timeSeconds' segundos
     timerAlarm(timer, timeSeconds * 1000000, true, 0);
+    timerStop(timer);
 
     // Configurar la fuente de despertar externa usando RTC_IO
     esp_sleep_enable_ext0_wakeup(MOTION_SENSOR_PIN, 1);  // 1 = High, 0 = Low
@@ -146,4 +147,3 @@ void loop() {
   // El ciclo 'loop' está vacío porque el código no es bloqueante
   // Las acciones se manejan a través de interrupciones y el temporizador
 }
-
