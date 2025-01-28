@@ -1,0 +1,23 @@
+# Ignore directories
+build/
+.pio/
+.vscode/
+
+# Ignore platform-specific files
+*.DS_Store
+*.swp
+
+# Ignore build files
+*.elf
+*.bin
+*.hex
+
+# Ignore core dumps
+*.core
+
+# Ignore temporary files
+*.tmp
+*.log
+
+# Ignore output files
+output/
