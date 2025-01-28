@@ -9,9 +9,7 @@ Este repositorio contiene ejemplos y proyectos prácticos utilizando el ESP32, u
 
 ## Estructura del Proyecto
 
-- `proyecto_1/`: Carpeta para el primer proyecto.
-- `proyecto_2/`: Carpeta para el segundo proyecto.
-- `proyecto_3/`: Carpeta para el tercer proyecto.
+…
 - ...
 
 ## Requisitos
@@ -36,7 +34,7 @@ Para compilar y ejecutar estos proyectos, necesitarás:
 
 ## Licencia
 
-Este repositorio está disponible bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+...
 
 ---
 
