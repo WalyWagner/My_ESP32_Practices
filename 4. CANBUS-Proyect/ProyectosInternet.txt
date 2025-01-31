@@ -1,0 +1,15 @@
+Usando biblioteca MCP2515:
+1) https://www.youtube.com/watch?v=spVgKZkNpT8
+	https://how2electronics.com/esp32-can-bus-communication-with-mcp2515-module/
+
+2) https://www.youtube.com/watch?v=a-qdH3ftWqc
+	https://mega.nz/file/BtNzib7b#oNlS1_tPPNNFpUmBoAK0yjNIIbNPm9b0bOvr41ilTWs
+	https://mega.nz/file/d1lAGKTa#2-lODSeIehUixKaYiDR_0xmjjt4C0Yp8aS21H4orVbM
+
+Usando biblioteca CAN
+1) https://www.youtube.com/watch?v=xIxRiJrZ12o
+	https://github.com/sarathtv/CAN-communication-using-Arduino
+	https://github.com/sandeepmistry/arduino-CAN
+
+
+	
