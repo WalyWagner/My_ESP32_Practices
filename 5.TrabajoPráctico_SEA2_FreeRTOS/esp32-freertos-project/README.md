@@ -11,21 +11,19 @@ This project demonstrates the use of FreeRTOS on an ESP32 to manage multiple tas
 
 ## Project Structure
 
-esp32-freertos-project
-├── src
-│   ├── main.cpp         // Punto de entrada de la aplicación
-│   ├── tasks           // Tareas del sistema
-│   │   ├── button_task.cpp  // Implementación de la tarea del botón
-│   │   ├── adc_task.cpp     // Implementación de la tarea ADC
-│   │   └── led_task.cpp     // Gestión del indicador LED
-│   ├── types
-│   │   └── index.h     // Definiciones de tipos y estructuras
-├── include
-│   └── config.h        // Configuración del proyecto
-├── platformio.ini      // Archivo de configuración de PlatformIO
-└── README.md           // Documentación del proyecto
-
-
+esp32-freertos-project  
+├── src  
+│ ├── main.cpp // Entry point of the application  
+│ ├── tasks  
+│ │ ├── button_task.cpp // Implementation of the button task  
+│ │ ├── adc_task.cpp // Implementation of the ADC task  
+│ │ └── led_task.cpp // Management of the LED indicator  
+│ └── types  
+│ └── index.h // Type definitions and structures  
+├── include  
+│ └── config.h // Configuration settings  
+├── platformio.ini // PlatformIO configuration file  
+└── README.md // Project documentation  
 
 ## Task Descriptions
 - **Button Task**: Monitors the button state and creates the LED and ADC tasks when the button is pressed.
