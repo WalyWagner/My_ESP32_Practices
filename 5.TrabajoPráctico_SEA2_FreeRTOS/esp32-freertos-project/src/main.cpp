@@ -1,6 +1,7 @@
 #include <Arduino.h>
 #include <freertos/FreeRTOS.h>
 #include <freertos/task.h>
+#include "FreeRTOSConfig.h"
 #include "config.h"
 
 // Task handles

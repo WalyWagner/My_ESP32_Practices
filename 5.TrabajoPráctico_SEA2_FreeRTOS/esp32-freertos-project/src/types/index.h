@@ -9,6 +9,6 @@ typedef struct {
     uint16_t value;     // ADC value
 } ADCMeasurement;
 
-#define ADC_MEASUREMENT_COUNT 2000 // Maximum number of measurements to store
+
 
 #endif // INDEX_H
