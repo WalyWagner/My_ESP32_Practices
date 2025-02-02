@@ -10,19 +10,7 @@ This project is part of a practical assignment for the course SISTEMAS EMBEBIDOS
 This project demonstrates the use of FreeRTOS on an ESP32 to manage multiple tasks, including reading from an ADC, controlling an LED, and handling a button press. The ADC readings are displayed on the serial monitor.
 
 ## Project Structure
-esp32-freertos-project 
-├── src 
-│ ├── main.cpp // Entry point of the application 
-│ ├── tasks 
-│ │ ├── button_task.cpp // Implementation of the button task 
-│ │ ├── adc_task.cpp // Implementation of the ADC task 
-│ │ └── led_task.cpp // Management of the LED indicator 
-│ └── types 
-│ └── index.h // Type definitions and structures 
-├── include 
-│ └── config.h // Configuration settings 
-├── platformio.ini // PlatformIO configuration file 
-└── README.md // Project documentation
+esp32-freertos-project ├── src │ ├── main.cpp // Entry point of the application │ ├── tasks │ │ ├── button_task.cpp // Implementation of the button task │ │ ├── adc_task.cpp // Implementation of the ADC task │ │ └── led_task.cpp // Management of the LED indicator │ └── types │ └── index.h // Type definitions and structures ├── include │ └── config.h // Configuration settings ├── platformio.ini // PlatformIO configuration file └── README.md // Project documentation
 
 
 
