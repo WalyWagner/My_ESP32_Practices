@@ -4,8 +4,8 @@
 #include "config.h"
 
 void ledTask(void *pvParameters) {
-    digitalWrite(LED_PIN, HIGH);
-    vTaskDelay(2000 / portTICK_PERIOD_MS);
-    digitalWrite(LED_PIN, LOW);
-    vTaskDelete(NULL);
+    digitalWrite(LED_PIN, HIGH); // Turn on the LED
+    vTaskDelay(pdMS_TO_TICKS(2000)); // Keep the LED on for 2 seconds
+    digitalWrite(LED_PIN, LOW); // Turn off the LED
+    vTaskDelete(NULL); // Delete the LED task
 }

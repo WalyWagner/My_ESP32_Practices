@@ -14,12 +14,12 @@ void adcTask(void *pvParameters);
 void ledTask(void *pvParameters);
 
 void setup() {
-    Serial.begin(115200);
-    pinMode(BUTTON_PIN, INPUT_PULLUP);
-    pinMode(LED_PIN, OUTPUT);
+    Serial.begin(115200); // Initialize serial communication
+    pinMode(BUTTON_PIN, INPUT_PULLUP); // Configure button pin as input with pull-up
+    pinMode(LED_PIN, OUTPUT); // Configure LED pin as output
     
-    // Create tasks
-    xTaskCreate(buttonTask, "Button Task", TASK_STACK_SIZE, NULL, 1, &buttonTaskHandle);
+    // Create button task
+    xTaskCreate(buttonTask, "Button Task", BUTTON_TASK_STACK_SIZE, NULL, BUTTON_TASK_PRIORITY, &buttonTaskHandle);
 }
 
 void loop() {
